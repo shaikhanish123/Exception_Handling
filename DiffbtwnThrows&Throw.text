@@ -1,0 +1,25 @@
+(1)throw Keyword:-
+throw ka use manually exception throw karne ke liye hota hai.
+throw new ExceptionName("message");
+Matlab:
+Programmer khud exception create karke throw kar raha hai.
+
+(2)throws Keyword
+throws method declaration ke saath use hota hai.
+Ye batata hai ki method kaunsi exception de sakta hai
+
+class Test {
+
+    static void readFile() throws IOException {
+        FileReader fr = new FileReader("abc.txt");
+    }
+
+    public static void main(String[] args) {
+        try {
+            readFile();
+        }
+        catch(IOException e) {
+            System.out.println("File not found");
+        }
+    }
+}
